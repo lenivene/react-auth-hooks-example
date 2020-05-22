@@ -17,9 +17,9 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      <h1>Você não está logado</h1>
+      <h1>You are not logged in</h1>
       <h2>
-        <Link to="/login">clique aqui</Link> para entrar
+        <Link to="/login">click here</Link> to enter
       </h2>
     </div>
   );

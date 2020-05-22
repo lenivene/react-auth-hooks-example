@@ -1,9 +1,4 @@
-import React, {
-  createContext,
-  useState,
-  useEffect,
-  FunctionComponent,
-} from "react";
+import React, { createContext, useState, useEffect } from "react";
 import store from "store";
 
 // Services
@@ -44,12 +39,15 @@ export const AuthProvider: React.FC = ({ children }) => {
       setUser(email);
     } catch (error) {
       if (error.response?.data) {
-        alert(error.response.data.error || "Not working");
+        alert(error.response.data.error);
       }
     }
   }
 
   function logout() {
+    store.remove("@auth:user");
+    store.remove("@auth:token");
+
     setUser(null);
   }
 

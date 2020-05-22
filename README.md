@@ -1,44 +1,42 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">React Context Hooks</h1>
+<p align="center">
+  <img src="./examples/login.jpg" alt="example" />
+</p>
+<h2 align="center">Simple page to authentication</h2>
 
-## Available Scripts
+## Hooks that I used
 
-In the project directory, you can run:
+I'm using `useState` and `useContext`. 😄
 
-### `yarn start`
+## Which API did I use to login
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+I'm using Reqres to create service request test
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- Base URL: `https://reqres.in/`
+- Endpoint: `/api/login`
+- Method request: `POST`
 
-### `yarn test`
+## Library used
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- To request API, I'm using `axios`
+- To save token data and info user, I'm using `store`
+- To style page, I'm using `styled-components`
 
-### `yarn build`
+## How to execute
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone the repository and install all packages; I'm use command `yarn` or `yarn`.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## How to clone repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Open your terminal and execute:
 
-### `yarn eject`
+```sh
+# Clone repository
+git clone git@github.com:lenivene/react-auth-hooks-example.git
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# After cloning, execute:
+cd "./react-auth-hooks-example"
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Install all packages
+yarn install
+```
