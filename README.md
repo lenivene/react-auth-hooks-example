@@ -38,5 +38,6 @@ git clone git@github.com:lenivene/react-auth-hooks-example.git
 cd "./react-auth-hooks-example"
 
 # Install all packages
-yarn install
+yarn install #or
+npm install
 ```
